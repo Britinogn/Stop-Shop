@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-N-Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap">
+</head>
+
+<body id="top">
+
+    <!-- this is header section -->
+    <header class="header" data-header>
+        <div class="container">
+            <h1>
+                <a href="#" class="logo">Stop & Shop<span class="span">.</span></a>
+            </h1>
+        
+
+            <nav class="navbar" data-navbar>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-bar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-bar-link" data-nav-link>Our Story</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#food_menu" class="nav-bar-link" data-nav-link>Our Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-bar-link" data-nav-link>Our News </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-bar-link" data-nav-link>Support</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-btn-group">
+                <button class="search-btn" data-search-btn>
+                    <ion-icon name="search-outline">
+                    </ion-icon>
+                </button>
+
+                <button class="btn-btn-hover">
+                    Reservation
+                </button>
+
+                <button class="nav-toggle-btn" data-menu-toggle>
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- this is the search for search -->
+    <div class="search-container" data-search-container>
+        <div search-box>
+            <input class="search-input" type="search" name="search" placeholder="Search Food">
+
+            <button class="search-submit" data-search-submit-btn>
+                <ion-icon name="search-outline">
+
+                </ion-icon>
+            </button>
+            <button class="search-close-btn" data-search-close-btn=""></button>
+        </div>    
+    </div>
+
+
+    <!-- this is the section for main -->
+    <main>
+        <article>
+            
+    <!-- this is the section for hero -->
+            <section class="hero" id="home" style="background-image: url(images/hero-bg.jpg);">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="subtitle">
+                            Eat, Sleep and Relax.
+                        </p>
+                        <h2 class="hero-title">
+                            #1 Eatery In Isoko!
+                        </h2>
+                        <p>Have you had a delicious meal today?</p>
+                        <button class="btn">Book A Table</button>
+                    </div>
+                
+                    <figure class="hero-banner">
+                        <img src="images/hero-banner-bg.png" width="820" height="716" aria-hidden="true" class="w-100 hero-img-bg">
+
+                        <img src="images/hero-banner.png" width="700" height="630" class="w-100 hero-img">
+                    </figure>
+                </div>
+            </section>
+
+            
+    <!-- this is the section for about -->
+
+            <section class="section section-divider gray about" id="about">
+                <div class="container">
+                    <div class="about-banner">
+                        <img src="images/about-banner.png" width="450" height="350">
+                    </div>
+
+                    <div class="about-content">
+
+                        <h2>Cafeteria, Burgers, Pizza and best Pringles</h2>
+                        <span class="span">In Isoko</span>
+
+                        <p class="section-text">Dear food lovers,<br>
+
+                            We warmly invite you to indulge in our delectable dishes at our eatery. From scrumptious appetizers to mouth-watering main courses and heavenly desserts, we have something to satisfy every palate. Our experienced chefs use only the freshest ingredients to ensure the highest quality and taste in every bite. Come and join us for a culinary experience that will leave you wanting more. We can't wait to serve you!
+                            
+                            Sincerely,
+                            [BRIGHT BILLIONS]</p>
+
+                        <ul class="about-list">
+                            <li class="about-item">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span>Menu variety and quality</span>
+                            </li>    
+                            
+                            <li class="about-item">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                <span>Ambiance and décor</span>
+                            </li> 
+
+                            <li class="about-item">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                <span>Menu variety and quality</span>
+                            </li> 
+
+                            <li class="about-item">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                <span>Location and convenience</span>
+                            </li> 
+
+                            <li class="about-item">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                <span>Reputation and reviews</span>
+                            </li> 
+
+                            <li class="about-item">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                <span>Pricing and value for money</span>
+                            </li> 
+
+                        </ul>  
+                        <button class="btn btn-btn-hover">Order Now</button>
+                    </div>
+                </div>
+            </section>
+
+    <!-- this is the section for food menu -->
+            <section class="section food-menu" id="food-menu">
+                <div class="container">
+                    <p class="section-subtitle">Popular Dishes</p>
+
+                    <h2 class="h2 section-title">
+                        Our Delicious<span>Foods.</span>
+                    </h2>
+
+                    <p class="section-text">
+                        People tend to choose a 
+                        restaurant based on the variety and
+                        quality of food items offered.
+                    </p>
+
+                    <ul class="filter-list">
+                        <li>
+                            <button class="filter-btn active">See All</button>
+                        </li>
+                    
+                        <li>
+                            <button class="filter-btn">Pizza</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Burgers</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Drinks</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Soups</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Chicken</button>
+                        </li>
+                    </ul>
+
+                    <ul class="food-menu-list">
+                        <li>
+                            <div class="food-menu-card">
+                                <div class="card-banner">
+                                    <img src="images/food-menu-1.png" width="300" height="300" alt="fruit salad" class="w-100">
+
+                                    <div class="badge">-15%</div>
+                                    <button class="btn food-menu-btn">Order Now</button>
+                                </div>
+
+                                <div class="wrapper">
+                                    <p>Catergory</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </div>
+                                <h3 class="h3 card-title">Tasty Fried Chickens</h3>
+                                <div class="price-wrapper">
+                                    <p class="price-text">Price:</p>
+                                    <data class="price">N986.67</data><br>
+                                    <del class="del">N,1000</del>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="food-menu-card">
+                                <div class="card-banner">
+                                    <img src="images/food-menu-2.png" width="300" height="300" alt="fruit salad" class="w-100">
+
+                                    <div class="badge">-20%</div>
+                                    <button class="btn food-menu-btn">Order Now</button>
+                                </div>
+
+                                <div class="wrapper">
+                                    <p>Catergory</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </div>
+                                <h3 class="h3 card-title">Soups</h3>
+                                <div class="price-wrapper">
+                                    <p class="price-text">Price:</p>
+                                    <data class="price">N534.54</data><br>
+                                    <del class="del">N550</del>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="food-menu-card">
+                                <div class="card-banner">
+                                    <img src="images/food-menu-3.png" width="300" height="300" alt="fruit salad" class="w-100">
+
+                                    <div class="badge">-7%</div>
+                                    <button class="btn food-menu-btn">Order Now</button>
+                                </div>
+
+                                <div class="wrapper">
+                                    <p>Noodles</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </div>
+                                <h3 class="h3 card-title">Tasty Fried Chickens</h3>
+                                <div class="price-wrapper">
+                                    <p class="price-text">Price:</p>
+                                    <data class="price">N345.67</data><br>
+                                    <del class="del">N450</del>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="food-menu-card">
+                                <div class="card-banner">
+                                    <img src="images/food-menu-4.png" width="300" height="300" alt="fruit salad" class="w-100">
+
+                                    <div class="badge">-12%</div>
+                                    <button class="btn food-menu-btn">Order Now</button>
+                                </div>
+
+                                <div class="wrapper">
+                                    <p>Chips</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </div>
+                                <h3 class="h3 card-title">Tasty Fried Chickens</h3>
+                                <div class="price-wrapper">
+                                    <p class="price-text">Price:</p>
+                                    <data class="price">N1,091.23</data><br>
+                                    <del class="del">N,1150</del>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+     <!-- this is the section for hero again -->  
+            <section class="section section-divider white cta" style="background-image: url(images/hero-bg.jpg);">
+
+                <div class="container">
+                    <div class="cta-content">
+
+                        <h2 class="h2 section-title">
+                            Stop and Chop have excellency in 
+                            <span class="span">Quality Foods</span>
+                        </h2>
+
+                        <p class="section-text">
+                            Stop  and Chop, Ozoro is one of the best eatery in Isoko
+                        </p>
+                        <button class="btn-btn-hover">Try Us Now</button>
+                    </div>
+
+                    <div>
+                        <figure class="cta-banner">
+                            <img src="images/cta-banner.png" width="700" height="637" alt="burger" >
+
+                            <img src="images/sale-shape.png" width="216" height="226">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- this is the section for delivery -->
+            <section class="section section-divider gray delivery">
+                <div class="container">
+                    <h2>
+                        Our Delivery is <span>Swift</span> and reliable
+                    </h2>
+
+                    <p>
+                        Stop and Chop, Ozoro is on of the best eartery in Isoko
+                    </p>
+                    <button class="btn btn-hover">
+                        Order Right Now
+                    </button>
+
+                    <div>
+                        <figure>
+                            <img src="images/delivery-banner-bg.png" width="700" height="600" >
+
+                            <img src="images/delivery-boy.svg" width="1000" height="800" aria-readonly="delivery-boy" class="w-100 delivery-img" data delivery-boy>
+                        </figure>
+                </div>
+            </section>
+
+            <!-- section for testimonial -->
+            <section class="section section-divider white testi" >
+                <div>
+                    <p class="section-subtitle">Testimonials</p>
+                    <h2 class="h2 section-title">Our Customers <span>Reviews</span></h2>
+
+                    <p class="section-text"> People tend to choose a restaurant based on the variety and quality of food items offered.</p>
+
+                    <ul class="testi-list has-scrollbar">
+                        <li class="testi-item">
+                            <div class=" testi-card">
+                                <div class="profile-wrapper">
+                                    <figure class="avatar">
+                                        <img src="images/avatar_delivery.jpeg" width="80" height="80" alt="pic of me">
+                                    </figure>
+                                    <div>
+                                        <h3 class="h4 testi-name">Bright Billions</h3>
+                                        <p class="testi-title">Software Developer</p>
+                                    </div>
+
+                                    <blockquote>
+                                        I love Shop and Chop. I always deem it fit to go there to buy banga soup. Thank you always
+                                    </blockquote>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testi-item">
+                            <div class=" testi-card">
+                                <div class="profile-wrapper">
+                                    <figure class="avatar">
+                                        <img src="images/avatar_delivery.jpeg" width="80" height="80" alt="pic of me">
+                                    </figure>
+                                    <div>
+                                        <h3 class="h4 testi-name">Bright Billions</h3>
+                                        <p class="testi-title">Software Developer</p>
+                                    </div>
+
+                                    <blockquote>
+                                        I love Shop and Chop. I always deem it fit to go there to buy banga soup. Thank you always
+                                    </blockquote>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testi-item">
+                            <div class=" testi-card">
+                                <div class="profile-wrapper">
+                                    <figure class="avatar">
+                                        <img src="images/avatar_delivery.jpeg" width="80" height="80" alt="pic of me">
+                                    </figure>
+                                    <div>
+                                        <h3 class="h4 testi-name">Bright Billions</h3>
+                                        <p class="testi-title">Software Developer</p>
+                                    </div>
+
+                                    <blockquote>
+                                        I love Shop and Chop. I always deem it fit to go there to buy banga soup. Thank you always
+                                    </blockquote>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testi-item">
+                            <div class=" testi-card">
+                                <div class="profile-wrapper">
+                                    <figure class="avatar">
+                                        <img src="images/avatar_delivery.jpeg" width="80" height="80" alt="pic of me">
+                                    </figure>
+                                    <div>
+                                        <h3 class="h4 testi-name">Bright Billions</h3>
+                                        <p class="testi-title">Software Developer</p>
+                                    </div>
+
+                                    <blockquote>
+                                        I love Shop and Chop. I always deem it fit to go there to buy banga soup. Thank you always
+                                    </blockquote>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </div>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>
