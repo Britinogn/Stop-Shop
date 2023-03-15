@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop-N-Shop</title>
+    <title>Stop-N-Shop|Your Restaurant For Best Meal</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
 </head>
 
 <body id="top">
 
     <!-- this is header section -->
-    <header class="header" data-header>
+    <header class="header" active data-header>
         <div class="container">
-            <h1>
-                <a href="#" class="logo">Stop N Chop<span class="span">.</span></a>
-            </h1>
+            <a href="#" class="logo">
+                <img src="images/logo.png" width="200px" height="100px"> 
+            </a>
+            <!-- <h1>
+                <a href="#" class="logo">Stop N<span class="span">Chop</span></a>
+            </h1> -->
         
 
-            <nav class="navbar" data-navbar>
-                <ul class="nav-list">
+            <nav class="navbar" active data-navbar>
+                <ul class="navbar-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-bar-link" data-nav-link>Home</a>
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#about" class="nav-bar-link" data-nav-link>Our Story</a>
+                        <a href="#about" class="navbar-link" data-nav-link>Our Story</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#food_menu" class="nav-bar-link" data-nav-link>Our Shop</a>
+                        <a href="#food_menu" class="navbar-link" data-nav-link>Our Shop</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#blog" class="nav-bar-link" data-nav-link>Our News </a>
+                        <a href="#blog" class="navbar-link" data-nav-link>Our News </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-bar-link" data-nav-link>Support</a>
+                        <a href="#" class="navbar-link" data-nav-link>Support</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +60,7 @@
                     Reservation
                 </button>
 
-                <button class="nav-toggle-btn" data-menu-toggle>
+                <button class="nav-toggle-btn" active data-menu-toggle>
                     <span class="line top"></span>
                     <span class="line middle"></span>
                     <span class="line bottom"></span>
@@ -65,9 +70,9 @@
         </div>
     </header>
 
-    <!-- this is the search for search -->
-    <div class="search-container" data-search-container>
-        <div search-box>
+    <!-- this is the section for search box  -->
+    <div class="search-container" active data-search-container>
+        <div class="search-box">
             <input class="search-input" type="search" name="search" placeholder="Search Food">
 
             <button class="search-submit" data-search-submit-btn>
@@ -75,7 +80,10 @@
 
                 </ion-icon>
             </button>
-            <button class="search-close-btn" data-search-close-btn=""></button>
+
+            <div>
+                <button class="search-close-btn" data-search-close-btn=""></button>
+            </div>
         </div>    
     </div>
 
@@ -132,7 +140,7 @@
                                 <p class="card-text">
                                     Have you had a delicious meal today
                                 </p>
-                                <img src="images/promo-1.png" width="300" height="300" alt="nigerian plaza" class="w-100">
+                                <img src="images/promo-1.png" width="300" height="300" alt="nigerian plaza" class="w-100 card-banner">
                             </div>
                         </li>
 
@@ -155,7 +163,7 @@
                                 <p class="card-text">
                                     Have you had a delicious meal today
                                 </p>
-                                <img src="images/promo-2.png" width="300" height="300" alt="nigerian plaza" class="w-100">
+                                <img src="images/promo-2.png" width="300" height="300" alt="nigerian plaza" class="w-100 card-banner">
                             </div>
 
                         </li>
@@ -180,7 +188,7 @@
                                 <p class="card-text">
                                     Have you had a delicious meal today
                                 </p>
-                                <img src="images/promo-3.png" width="300" height="300" alt="nigerian plaza" class="w-100">
+                                <img src="images/promo-3.png" width="300" height="300" alt="nigerian plaza" class="w-100 card-banner">
                             </div>
 
                         </li>
@@ -204,7 +212,7 @@
                                 <p class="card-text">
                                     Have you had a delicious meal today
                                 </p>
-                                <img src="images/promo-4.png" width="300" height="300" alt="nigerian plaza" class="w-100">
+                                <img src="images/promo-4.png" width="300" height="300" alt="nigerian plaza" class="w-100 card-banner">
                             </div>
 
                         </li>
@@ -228,7 +236,7 @@
                                 <p class="card-text">
                                     Have you had a delicious meal today
                                 </p>
-                                <img src="images/promo-5.png" width="300" height="300" alt="nigerian plaza" class="w-100">
+                                <img src="images/promo-5.png" width="300" height="300" alt="nigerian plaza" class="w-100 card-banner">
                             </div>
 
                         </li>
@@ -244,13 +252,15 @@
             <section class="section section-divider gray about" id="about">
                 <div class="container">
                     <div class="about-banner">
-                        <img src="images/about-banner.png" width="450" height="350">
+                        <img src="images/about-banner.png" width="450" height="350" class="w-100 about-img">
+                    
+                        <img src="images/sale-shape-red.png" width="216" height="226" class="abs-img scale-up-anim">
                     </div>
 
                     <div class="about-content">
 
-                        <h2>Cafeteria, Burgers, Pizza and best Pringles</h2>
-                        <span class="span">In Isoko</span>
+                        <h2 class=" h2 section-title">Cafeteria, Burgers, Pizza and best Pringles
+                        <span class="span">In Isoko</span></h2>
 
                         <p class="section-text">Dear food lovers,<br>
 
@@ -466,21 +476,23 @@
                     <div class="cta-content">
 
                         <h2 class="h2 section-title">
-                            Stop and Chop have excellency in 
+                            Stop N Chop have excellency in 
                             <span class="span">Quality Foods</span>
                         </h2>
 
                         <p class="section-text">
-                            Stop  and Chop, Ozoro is one of the best eatery in Isoko
+                            Stop and Chop, Ozoro is one of the best eatery in Isoko
                         </p>
-                        <button class="btn-btn-hover">Try Us Now</button>
+                        <button class="btn btn-hover">Try Us Now</button>
                     </div>
 
                     <div>
                         <figure class="cta-banner">
-                            <img src="images/cta-banner.png" width="700" height="637" alt="burger" >
+                            <img src="images/cta-banner.png" width="700" height="637" alt="burger" 
+                            class="w-100 cta-img">
 
-                            <img src="images/sale-shape.png" width="216" height="226">
+                            <img src="images/sale-shape.png" width="216" height="226" 
+                            class="abs-img scale-up-anim">
                         </figure>
                     </div>
                 </div>
