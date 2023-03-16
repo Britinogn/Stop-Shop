@@ -120,7 +120,7 @@ html{
 body{
   background-color: var(--white);
   color: var(--sonic-silver);
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -176,11 +176,11 @@ body.active{
 .h2,
 .h3,
 .h4{
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
 }
 
 .h3{
-  font-size:var(--fs-2) ;
+  font-size:var(--fs-2); 
 }
 
 .h4{
@@ -216,7 +216,7 @@ body.active{
   transition: var(--transition-2);
 }
 
-/*  */
+/* this is the section for header */
 
 header-btn-group{
   display: none;
@@ -441,6 +441,7 @@ header-btn-group{
 }
 
 .hero{
+  background-image: url(images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -563,12 +564,21 @@ header-btn-group{
   margin-inline: auto;
 }
 
+.about-content .section-text{
+  margin-bottom: 20px;
+}
+
 .about-item{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+
+/* .about-item span{
+  display: flex;
+  margin: 5px;
+} */
 
 .about-item:not(:last-child){
   margin-block-end: 10px;
@@ -590,7 +600,12 @@ header-btn-group{
 }
 
 .about .btn{
+  margin-top: 25px;
   margin-inline: auto;
+}
+
+.h2 .span{
+  color: var(--cinnabar);
 }
 
 
@@ -641,4 +656,296 @@ header-btn-group{
 .cta-banner .abs-img{
   top: 50px;
   left: 10px;
+}
+
+/* this is the delivery section */
+
+.delivery-content{
+  margin-block-end: 40px;
+}
+
+.delivery .section-title{
+  max-width: 17ch;
+  line-height: 1.6;
+  letter-spacing: -2px;
+}
+
+.delivery .section-text{
+  margin-block: 15px 20px;
+}
+
+.delivery-banner{
+  position: relative;
+  aspect-ratio: 1/0.85;
+}
+
+.delivery-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-80px);
+  transition:var(--transition-2) ;
+}
+
+
+/* this is the testimonial section */
+
+.testi{
+  text-align: center;
+}
+
+.testi .section-title{
+  margin-block: 10px 20px;
+}
+
+.testi .section-text{
+  margin-inline: auto;
+  max-width: 44ch;
+  margin-block-end: 30px;
+}
+
+.testi-card{
+  background-color:var(--white);
+  padding: 40px;
+  text-align: left;
+  box-shadow: var(--shadow-2);
+}
+
+.testi-card .profile-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testi-card .avatar{
+  min-width: max-content;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+.testi-card .testi-name{
+  margin-block-end: 2px;
+  font-size: var(--fs-5);
+}
+
+.testi-card .testi-title{
+  font-family: var(--ff-rubik);
+  font-size: var(--fs-4);
+}
+
+.testi-card .testi-text{
+  margin-block: 20px 15px ;
+}
+
+.testi-item{
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+/* this is the section for banner */
+.banner{
+  color: var(--white);
+}
+
+/* .banner-list{
+  display: grid;
+  gap: 10px;
+}
+
+.banner-lg{
+  height: 430px;
+} */
+
+.banner-sm{
+  height: 200px;
+}
+
+.banner-md{
+  height: 240px;
+}
+
+.banner .banner-card{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+
+.banner-card .banner-img{
+  background-color: var(--gainsboro);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: var(--transition-1);
+}
+
+.banner-card:is(:hover, :focus-within) .banner-img{
+  transform: scale(1.05);
+}
+
+.banner-item-content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  right: 20px;
+  max-height: calc(100% -30px);
+}
+
+.banner-md .banner-item-content{
+  left: 50%;
+}
+
+.banner-title,
+.banner-subtitle,
+.banner-text
+{
+ line-height: 1.2;
+ font-family: var(--ff-rubik);
+ letter-spacing: -0.5px;
+ font-weight: var(--fw-500);
+ margin-bottom: 20px;
+ /* color: var(--white); */
+}
+
+.banner-lg .banner-subtitle{
+  font-size: var(--fs-4);
+  max-width: 16ch;
+}
+
+.banner-lg .banner-title{
+  font-size: var(--fs-2);
+  margin-block-end: 10px;
+}
+
+.banner-lg .banner-text{
+  font-size: var(--fs-5);
+  margin-bottom: 85px;
+}
+
+.banner-card .banner-subtitle{
+  font-size: var(--fs-3);
+}
+
+.banner-card .btn{
+  --bg-color:var(--dark-orange)
+  --height:40px;
+  --padding-inline:25px
+}
+
+.banner-card .btn:is(:hover, :focus){
+  background-color: var(--rich-black-fogra-29);
+}
+
+
+
+/* this is the blog section */
+.blog{
+  text-align: center;
+}
+
+.blog .section-title{
+  margin-block: 10px 20px;
+}
+
+.blog .section-text{
+  margin-block-end: 40px;
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+.blog-list{
+  gap: 30px;
+  display: grid;
+}
+
+.blog-card{
+  text-align: left;
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+
+.blog-card .card-banner{
+  position: relative;
+  background-color: var(--gainsboro);
+  aspect-ratio: 1 / 0.65;
+}
+
+.blog-card .badge{
+  top: 20px;
+  right: auto 20px;
+  font-family: var(--ff-rubik);
+  text-transform: uppercase;
+
+  --bg-color:var(--tangerine);
+  --padding-block:5px ;
+}
+
+.blog-card .card-connect{
+  padding: 30px;
+}
+
+.blog-card .card-meta-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 12px 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.blog-card .card-meta-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-card .card-meta-link ion-icon{
+  color: var(--tangerine);
+  font-size: 1.5rem;
+  --ion-icon-stroke-width: 60px;
+}
+
+.blog-card :is(.meta-info, .btn-link){
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--rich-black-fogra-29);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-rubik);
+  transition: var(--transition-1);
+}
+
+.blog-card .card-meta-link:is(:hover, :focus) .meta-info{
+  color: var(--deep-saffron);
+}
+
+.blog-card .card-title{
+  font-size: var(--fs-3);
+  margin-block: 20px 15px;
+  transition: var(--transition-2);
+}
+
+.blog-card .card-title:is(:hover, :focus){
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.blog-card .card-text{
+  margin-block-end: 20px;
+}
+
+.blog-card .btn-link{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-card .btn-link ion-icon{
+  font-size: 1.5rem;
+}
+
+.blog-card .btn-link:is(:hover, :focus){
+  color: var(--deep-saffron);
+  gap: 10px;
 }
