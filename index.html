@@ -19,14 +19,14 @@
 <body id="top">
 
     <!-- this is header section -->
-    <header class="header"data-header>
+    <!-- <header class="header"data-header>
         <div class="container">
             <a href="#" class="logo">
                 <img src="images/logo.png" width="200px" height="100px"> 
             </a>
-            <!-- <h1>
+            <h1>
                 <a href="#" class="logo">Stop N<span class="span">Chop</span></a>
-            </h1> -->
+            </h1> 
         
 
             <nav class="navbar"  data-navbar>
@@ -63,7 +63,7 @@
                     Reservation
                 </button>
 
-                <button class="nav-toggle-btn active" aria-label="Toggle Menu" data-menu-toggle-btn>
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
                     <span class="line top"></span>
                     <span class="line middle"></span>
                     <span class="line bottom"></span>
@@ -71,23 +71,71 @@
             </div>
 
         </div>
+    </header> -->
+
+    <header class="header " data-header>
+        <div class="container">
+            <h1>
+                <a href="#" class="logo">StopNChop<span class="span">.</span></a>
+            </h1>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#home" class="navbar-link" data-navbar-link>About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="navbar-link" data-navbar-link>Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#food_menu" class="navbar-link" data-navbar-link>Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#blog" class="navbar-link" data-navbar-link>Our Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="navbar-link" data-navbar-link>Conatct Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-btn-group">
+                <button class="search-btn" aria-label="search" data-search-btn>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <button class="btn btn-hover"> Reservation</button>
+
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
+                
+            </div>
+        </div>
+
     </header>
 
     <!-- this is the section for search box  -->
-    <div class="search-container " data-search-container>
+    <div class="search-container" data-search-container>
         <div class="search-box">
             <input class="search-input" type="search" name="search" placeholder="Search Food">
 
-            <button class="search-submit" data-search-submit-btn>
-                <ion-icon name="search-outline">
-
-                </ion-icon>
+            <button class="search-submit-btn" data-search-submit-btn>
+                <ion-icon name="search-outline"></ion-icon>
             </button>
-
-            <div>
-                <button class="search-close-btn" data-search-close-btn=""></button>
-            </div>
-        </div>    
+        </div>
+            
+            <button class="search-close-btn" aria-label="Cancel Search" data-search-close-btn></button>
     </div>
 
 
@@ -538,17 +586,19 @@
                         <p class="section-text">
                             Stop and Chop, Ozoro is on of the best eartery in Isoko
                         </p>
+
                         <button class="btn btn-hover">
                             Order Right Now
                         </button>
                     </div>
 
-                    
+                    <!-- <div> -->
                         <figure class="delivery-banner">
                             <img src="images/delivery-banner-bg.png" width="700" height="600" alt="this a cloud" class="w-100">
 
                             <img src="images/delivery-boy.svg" width="1000" height="800" aria-readonly="delivery-boy" class="w-100 delivery-img" data delivery-boy>
                         </figure>
+                    <!-- </div> -->
                 </div>
             </section>
 
@@ -919,34 +969,36 @@
     <!-- this is the section for footer top -->
     <footer class="footer">
         <div class="footer-top">
+            
             <div class="container">
                 <div class="footer-brand">
                     <a href="#" class="logo">Stop N Chop<span>.</span></a>
+                    
                     <p class="footer-text">
                         We can't wait to serve you! Sincerely, [BRIGHT BILLIONS]
                     </p>
 
                     <!-- social-list -->
                     <ul class="social-list">
-                        <li>
+                        <li class="social-link">
                             <a href="https://facbook.com/bright06" target="_blank">
                                 <ion-icon name="logo-facebook">Facebook</ion-icon>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="social-link">
                             <a href="https://instagram.com/britinogn_"  target="_blank">
                                 <ion-icon name="logo-instagram">Instagram</ion-icon>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="social-link">
                             <a href="https://twitter.com/officialbritino" target="_blank">
                                 <ion-icon name="logo-twitter">Twitter</ion-icon>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="social-link">
                             <a href="https://github.com/britiongn" target="_blank">
                                 <ion-icon name="logo-github">GitHub</ion-icon>
                             </a>
