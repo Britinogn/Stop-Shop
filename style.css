@@ -214,7 +214,78 @@ body.active{
   transform: translate(-50%, 51%) scale(var(--scale, 1));
   background-color: var(--rich-black-fogra-29);
   transition: var(--transition-2);
+  z-index: -1;
 }
+
+.btn-hover:is(:hover, :focus)::after{
+  --scale:500
+}
+
+.section{
+  padding-block: var(--section-padding);
+}
+
+.section.white{
+  background-color: var(--isabelline);
+}
+
+.section-divider{
+  position:relative;
+}
+
+.section-divider::before,
+.section-divider::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+}
+
+.section-divider.white::after{
+  background: url("images/shape-white.png");
+}
+
+.section-divider.gray::after{
+  background: url("images/shape-grey.png");
+}
+
+.w-100{
+  width: 100%;
+}
+
+.has-scrollbar{
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-align: inline mandatory;
+  padding-block-end: 40px;
+}
+
+.has-scrollbar::-webkit-scrollbar{
+  height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button{
+  width: calc(25% - 40px);
+
+}
+
+.has-scrollbar::-webkit-scrollbar-track{
+  outline: 2px solid var(--deep-saffron);
+  border-radius: 50px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb{
+   border: 3px solid var(--cultured);
+   border-radius: 50%;
+}
+
+
+
 
 /* this is the section for header */
 
@@ -240,9 +311,9 @@ body.active{
 
 .header.active{
   --color:var(--rich-black-fogra-29);
-  --btn-color:var(--champagne-pink);
+  --btn-color:var(--rich-black-fogra-29);
   position: fixed;
-  top: -86px;
+  top: -135px;
   background-color: var(--white);
   animation: slideIn 0.5s ease-out forwards;
   box-shadow: var(--shadow-1);
@@ -490,7 +561,7 @@ margin-left: auto;
   text-align: center;
   padding:40px 30px ;
   box-shadow: var(--shadow-1);
-  z-index: -1;
+  z-index: 1;
 }
 
 .promo-card::after{
@@ -502,7 +573,7 @@ margin-left: auto;
   transform: scaleY(0.3);
   transform-origin: bottom;
   transition: var(--transition-1);
-  z-index: 1;
+  z-index: -1;
 }
 
 .promo-card:hover::after{
@@ -515,7 +586,7 @@ margin-left: auto;
   margin-inline: auto;
 }
 
-.promo-card .card-icon path{
+.promo-card:hover .card-icon path{
   fill: var(--white);
 }
 
@@ -544,6 +615,8 @@ margin-left: auto;
   scroll-snap-align: start;
 }
 
+/* this is the section form about */
+
 .about{
   text-align: center;
 }
@@ -553,7 +626,7 @@ margin-left: auto;
 }
 
 .about-img{
-  max-width: 15ch;
+  max-width: max-content;
   margin-inline: auto;
 }
 
@@ -562,10 +635,33 @@ margin-left: auto;
   left: 100px;
 }
 
+.abs-img{
+  position: absolute;
+  transform: scale(1);
+}
+
+.scale-up-anim{
+  animation: scaleUp 1s linear infinite alternate;
+}
+
+@keyframes scaleUp{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+
 .about .section-title{
   max-width: 15ch;
   margin-block: 40px 10px;
   margin-inline: auto;
+}
+
+.section-title > .span{
+  display: inline-block;
+  color: var(--deep-saffron);
 }
 
 .about-content .section-text{
@@ -577,6 +673,10 @@ margin-left: auto;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.about-list{
+  margin-block: 20px 30px;
 }
 
 /* .about-item span{
@@ -609,7 +709,7 @@ margin-left: auto;
 }
 
 .h2 .span{
-  color: var(--cinnabar);
+  color: var(--deep-saffron);
 }
 
 
@@ -659,6 +759,124 @@ margin-left: auto;
   top: 50px;
   left: 10px;
 }
+
+/* this is the section for food menu */
+
+.food-menu{
+  text-align: center;
+}
+
+.food-menu .section-title{
+  max-width: 44ch;
+  margin-block:10px 20px;
+}
+
+.food-menu .section-text{
+  max-width: 44ch;
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
+
+.filter-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-block-end: 40px;
+}
+
+.filter-btn{
+  background: var(--white);
+  color: var(--rich-black-fogra-29);
+  font-family: var(--ff-rubik);
+  padding: 5px 20px;
+  border: 1px solid var(--border-color, var(--cultured));
+  font-weight: var(--fw-700);
+
+}
+
+.filter-btn.active{
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  --border-color: var(--deep-saffron);
+}
+
+.food-menu-list{
+  display: grid;
+  gap: 30px;
+}
+
+.food-menu-card{
+  background-color: var(--white);
+  padding:40px ;
+  box-shadow: var(--shadow-2);
+}
+
+.food-menu-card:focus-within{
+  outline: 1px auto -webkit-focus-ring-color;
+}
+
+.food-menu-card .card-banner{
+  position: relative;
+  padding-block-start: 30px;
+  max-width: max-content;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+}
+
+.badge{
+  position: absolute;
+  background-color: var(--bg-color, var(--cinnabar));
+  color: var(--white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  padding-block:var(--padding-block, 2px) 5px;
+}
+
+.rating-wrapper{
+  display: flex;
+  gap: 5px;
+  color: var(--deep-saffron);
+}
+
+.food-menu-card .badge{
+  top: 0;
+  left: 0;
+}
+
+.food-menu-btn{
+  position: absolute;
+  top: calc(50% + 15px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: max-content;
+  --bg-color:var(--cinnabar);
+  width: 100%;
+  --height: 40px;
+  --padding-inline: 20px;
+  /* opacity: 0; */
+  transition: var(--transition-2);
+}
+
+.food-menu-btn:is(:hover, :focus){
+  --bg-color:var(--deep-saffron);
+}
+
+.food-menu-card:is(:hover, :focus-within) .food-menu{
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.food-menu-cardn .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-block: 20px 10px;
+}
+
+
+
 
 /* this is the delivery section */
 
@@ -960,9 +1178,10 @@ margin-left: auto;
 
 .footer-top{
   position: relative;
+  padding-block: 120px;
   background-repeat: no-repeat;
   background-size: contain
-  background-position:bottom;
+  background-position: bottom;
   border-block-end: 2px solid var(--independence_30);
 }
 
@@ -972,7 +1191,7 @@ margin-left: auto;
   bottom: -11px;
   left: -160px;
   width: 160px;
-  animation: running-cycle 10s linear infinite;
+  animation: running-cycle 5s linear infinite;
 }
 
 @keyframes running-cycle{
@@ -1042,4 +1261,60 @@ margin-left: auto;
 .footer-form{
   background-color: var(--white);
   padding: 30px;
+  border: 1px solid var(--cultured);
+  box-shadow: var(--shadow-2);
+}
+
+.input-wrapper{
+  display: grid;
+  gap: 20px;
+  margin-block-end: 10px;
+}
+
+.input-field{
+  color: var(--spanish-gray);
+  font-size: var(--fs-4);
+  border: 1px solid var(--cultured);
+  padding: 8px 12px;
+}
+
+.input-field::placeholder{
+  color: var(--cultured);
+}
+
+.input-field::webkit-calendar-picker-indicator{
+  opacity: 0.5;
+}
+
+textarea.input-field{
+  min-height: 50px;
+  max-height: 150px;
+  height: 100px;
+  resize: vertical;
+  margin-block-end: 10px;
+}
+
+.footer-form .btn{
+  font-size: var(--fs-20);
+  --height: 40px;
+  --padding-inline: 25px;
+}
+
+.footer-form .btn:is(:hover, :focus){
+  background-color: var(--rich-black-fogra-29);
+}
+
+.footer-bottom{
+  padding-block: 20px;
+  text-align: center;
+  background:purple;
+  color: aliceblue;
+}
+
+.copyright-link{
+  display: inline-block;
+}
+
+.copyright-link:is(:hover, :focus){
+
 }

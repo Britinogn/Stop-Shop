@@ -86,11 +86,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#home" class="navbar-link" data-navbar-link>About Us</a>
+                        <a href="#about" class="navbar-link" data-navbar-link>About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#about" class="navbar-link" data-navbar-link>Shop</a>
+                        <a href="#shop" class="navbar-link" data-navbar-link>Shop</a>
                     </li>
 
                     <li class="nav-item">
@@ -314,9 +314,11 @@
                 <div class="container">
 
                     <div class="about-banner">
-                        <img src="images/about-banner.png" width="450" height="350" class="w-100 about-img" alt="burger">
+                        <img src="images/about-banner.png" width="450" height="350" 
+                        class="w-100 about-img" alt="burger">
                     
-                        <img src="images/sale-shape-red.png" width="216" height="226" class="abs-img scale-up-anim">
+                        <img src="images/sale-shape-red.png" width="216" height="226" 
+                        class="abs-img scale-up-anim">
                     </div>
 
                     <div class="about-content">
@@ -329,7 +331,8 @@
                             We warmly invite you to indulge in our delectable dishes at our eatery. From scrumptious appetizers to mouth-watering main courses and heavenly desserts, we have something to satisfy every palate. Our experienced chefs use only the freshest ingredients to ensure the highest quality and taste in every bite. Come and join us for a culinary experience that will leave you wanting more. We can't wait to serve you!
                             
                             Sincerely,
-                            [BRIGHT BILLIONS]</p>
+                            [BRIGHT BILLIONS]
+                        </p>
 
                         <ul class="about-list">
 
@@ -376,7 +379,7 @@
                     <p class="section-subtitle">Popular Dishes</p>
 
                     <h2 class="h2 section-title">
-                        Our Delicious<span>Foods.</span>
+                        Our Delicious<span class="span"> Foods.</span>
                     </h2>
 
                     <p class="section-text">
@@ -387,7 +390,7 @@
 
                     <ul class="filter-list">
                         <li>
-                            <button class="filter-btn" active>See All</button>
+                            <button class="filter-btn active" >See All</button>
                         </li>
                     
                         <li>
@@ -438,7 +441,7 @@
                                 <h3 class="h3 card-title">Tasty Fried Chickens</h3>
                                 <div class="price-wrapper">
                                     <p class="price-text">Price:</p>
-                                    <data class="price">N986.67</data><br>
+                                    <data class="price">N986.67</data>
                                     <del class="del">N,1000</del>
                                 </div>
                             </div>
@@ -469,7 +472,7 @@
                                 <div class="price-wrapper">
                                     
                                     <p class="price-text">Price:</p>
-                                    <data class="price">N534.54</data><br>
+                                    <data class="price">N534.54</data>
                                     <del class="del">N550</del>
 
                                 </div>
@@ -533,7 +536,7 @@
                                 <div class="price-wrapper">
                                     
                                     <p class="price-text">Price:</p>
-                                    <data class="price">N1,091.23</data><br>
+                                    <data class="price">N1,091.23</data>
                                     <del class="del">N,1150</del>
 
                                 </div>
@@ -1047,15 +1050,16 @@
                     </ul>
 
                     <form action="" class="footer-form">
-                        <p class="footer-list-title">Book A Table Now</p>
+                        <p class="footer-list-title">Book A Table</p>
 
-                        <div>
+                        <div class="input-wrapper">
                             <input type="text" name="full_name" placeholder="Your Name" aria-label="Your Name" class="input-field">
                         
                             <input type="text" name="email_address" placeholder="Your Email" aria-label="Your Email" class="input-field">
                         </div>
 
                         <div class="input-wrapper">
+
                             <select name="total_person" aria-label="Total Person" class="input-field" required>
                                 <option value="person"> 1 person</option>
                                 <option value="person"> 2 person</option>
@@ -1065,11 +1069,12 @@
 
                                 <input type="date" name="booking_date" aria-label="Reservation date" required >
                             </select>
+                        </div>
 
                             <textarea name="message" placeholder="messages" aria-label="message" class="input-field" required></textarea>
 
                             <button type="submit" class="btn">Book A Table Now</button>
-                        </div>
+                        
                     </form>
                     
                 </div>
@@ -1078,9 +1083,9 @@
 
         <!-- footer bottom -->
         <div class="footer-bottom">
-            <div>
-                <p>
-                    &copy;2023 <a href="#">Bright Billions.</a> All Right Reserved
+            <div class="container">
+                <p class="copyright-text">
+                    &copy;2023 <a href="justiceorugun.com" class="copyright-link">Bright Billions.</a> All Right Reserved
                 </p>
             </div>
         </div>
